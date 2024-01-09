@@ -1,0 +1,72 @@
+# Cub3D
+
+Cub3D is a raycasting game written in C. This project uses the raycasting technique to create a simple 3D world using a 2D map. It was originally developed [mention the original development date].
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Dependencies](#dependencies)
+- [Building and Running](#building-and-running)
+- [Controls](#controls)
+- [Project Structure](#project-structure)
+
+## Introduction
+
+Briefly explain what Cub3D is and what it does. Mention the inspiration behind the project and any key features.
+
+## Features
+
+- Raycasting engine
+- 3D rendering
+- Map parsing
+- [Add more features]
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/teoet/cub3d.git
+cd cub3d
+
+## Dependencies
+
+- [Library 1]
+- [Library 2]
+- [Tool 1]
+
+## Building and Running
+
+```bash
+# Build the project
+make
+
+# Run the game
+./cub3d path/to/map.cub
+```
+
+## Controls
+
+- W: Move forward
+- A: Move left
+- S: Move backward
+- D: Move right
+- [Add more controls]
+
+## Project Structure
+
+```
+.
+|-- src/
+|   |-- main.c
+|   |-- raycasting.c
+|   |-- map_parsing.c
+|   |-- [Add more source files]
+|-- include/
+|   |-- cub3d.h
+|   |-- raycasting.h
+|   |-- [Add more header files]
+|-- [Add more directories/files]
+|-- Makefile
+|-- README.md
+```
