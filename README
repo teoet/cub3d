@@ -1,9 +1,10 @@
 ## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Building and Running](#building-and-running)
-- [Controls](#controls)
+- [Introduction]
+- [Features]
+- [Dependencies]
+- [Getting Started]
+- [Building and Running]
+- [Controls]
 
 ## Introduction
 
@@ -14,6 +15,10 @@ Cub3D is a raycasting game written in C. This project uses the raycasting techni
 - Raycasting engine
 - 3D rendering
 - Map parsing
+
+## Dependencies
+
+- lbsd
 
 ## Getting Started
 
