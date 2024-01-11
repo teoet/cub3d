@@ -29,7 +29,7 @@ cd cub3d
 make
 
 # Run the game
-./cub3d path/to/map.cub
+./cub3D resources/maps/map.cub
 ```
 ## Controls
 
