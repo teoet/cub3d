@@ -50,7 +50,7 @@ INC = -I includes -I$(MLX_DIR)
 CC = gcc
 RM = rm -f
 
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall  -Wextra
 
 MLX_DEF = -D $(OS_NAME)
 

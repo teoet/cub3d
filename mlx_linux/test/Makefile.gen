@@ -1,12 +1,12 @@
 INC=/usr/include
-HT=Linux
+HT=x86_64
 DOCP=do_cp
 
 
 
 INCLIB=$(INC)/../lib
 
-CC=gcc
+CC=clang
 
 CFLAGS= -I$(INC) -O3 -I..
 
@@ -17,7 +17,7 @@ OBJ = $(SRC:.c=.o)
 all	:$(NAME)
 
 $(NAME)	:$(OBJ)
-	$(CC) -o $(NAME) $(OBJ) -L.. -lmlx -L$(INCLIB) -lXext -lX11 -lm -lbsd
+	$(CC) -o $(NAME) $(OBJ) $(shell pkg-config --libs --static mlx)
 
 clean	:
 	rm -f $(NAME) $(OBJ) *~ core *.core

@@ -1,3 +1,32 @@
+/*
+** mlx.h for MinilibX in 
+** 
+** Made by Charlie Root
+** Login   <ol@epitech.net>
+** 
+** Started on  Mon Jul 31 16:37:50 2000 Charlie Root
+** Last update Tue May 15 16:23:28 2007 Olivier Crouzet
+*/
+
+/*
+**   MinilibX -  Please report bugs
+*/
+
+
+/*
+** FR msg - FR msg - FR msg
+**
+** La MinilibX utilise 2 librairies supplementaires qu'il
+**      est necessaire de rajouter a la compilation :
+**   -lmlx -lXext -lX11
+**
+** La MinilibX permet le chargement des images de type Xpm.
+** Notez que cette implementation est incomplete.
+** Merci de communiquer tout probleme de chargement d'image
+** de ce type.
+*/
+
+
 #ifndef MLX_H
 
 #define	MLX_H
@@ -14,7 +43,7 @@ void	*mlx_init();
 ** Basic actions
 */
 
-void	*mlx_new_window(void *mlx_ptr, int size_x, int size_y, char *title);
+void	*mlx_new_window(void *mlx_ptr, int size_x, int size_y, char const *title);
 /*
 **  return void *0 if failed
 */
@@ -79,7 +108,7 @@ int	mlx_string_put(void *mlx_ptr, void *win_ptr, int x, int y, int color,
 		       char *string);
 void	*mlx_xpm_to_image(void *mlx_ptr, char **xpm_data,
 			  int *width, int *height);
-void	*mlx_xpm_file_to_image(void *mlx_ptr, char *filename,
+void	*mlx_xpm_file_to_image(void *mlx_ptr, char const *filename,
 			       int *width, int *height);
 int	mlx_destroy_window(void *mlx_ptr, void *win_ptr);
 
@@ -97,10 +126,6 @@ int	mlx_do_key_autorepeatoff(void *mlx_ptr);
 int	mlx_do_key_autorepeaton(void *mlx_ptr);
 int	mlx_do_sync(void *mlx_ptr);
 
-int	mlx_mouse_move(void *mlx_ptr, void *win_ptr, int x, int y);
-int	mlx_mouse_hide(void *mlx_ptr, void *win_ptr);
-int	mlx_mouse_show(void *mlx_ptr, void *win_ptr);
-
-int	mlx_get_screen_size(void *mlx_ptr, int *sizex, int *sizey);
+int mlx_get_screen_size(void *mlx_ptr, int *sizex, int *sizey);
 
 #endif /* MLX_H */
