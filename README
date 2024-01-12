@@ -7,7 +7,10 @@
 
 ## Introduction
 
-Cub3D is a raycasting game written in C. This project uses the raycasting technique to create a simple 3D world using a 2D map. It was originally developed as a Wolfenstein 3D by id Software in 1992.
+Cub3D is a raycasting game written in C.
+Raycasting is a rendering technique to create a 3D perspective in a 2D map. Back when computers were slower it wasn't possible to run real 3D engines in realtime,
+ and raycasting was the first solution. Raycasting can go very fast, because only a calculation has to be done for every vertical line of the screen. 
+ The most well known game that used this technique, is of course Wolfenstein 3D.
 
 ## Features
 
