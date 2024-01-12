@@ -45,4 +45,4 @@ make
 - A: Move left
 - S: Move backward
 - D: Move right
- Use arrow keys to move the camera.
+- Arrow keys to move the camera. 
