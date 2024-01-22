@@ -4,9 +4,8 @@ SO ./resources/std/textures/mossy.xpm
 WE ./resources/std/textures/wood.xpm
 EA ./resources/std/textures/redbrick.xpm
 S ./resources/std/textures/barrel.xpm
-F 56,79,88
-C 242,212,194
-
+C 135,206,235
+F 242,212,194
 
 11111111111111
 10000000000001
